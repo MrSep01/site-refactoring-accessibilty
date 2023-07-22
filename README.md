@@ -14,6 +14,13 @@ This project involved updating an existing website to improve its accessibility 
 
 3. Updated the title of the webpage to make it more descriptive and relevant to the site's content.
 
+
+4. fixed the linked issue by adding id and class for the search-engine-optimizatuon selection. 
+
+### CSS:
+
+CSS was updated to be compatible with replacement of non-semantic div elements with semantic HTML elements (header, nav, main, section, article, aside, footer)
+=======
 4. Updated the type of stylesheet content linked: css/text 
 
 5. fixed the link issue by Updating the sction id and class for the search-potimization section
@@ -21,6 +28,7 @@ This project involved updating an existing website to improve its accessibility 
 ### CSS:
 
 CSS was updated making sure it is compatible with addition of semantic HTML elements 
+
 
 ## Accessibility Standards
 
@@ -33,3 +41,5 @@ Further enhancements include improvements for responsiveness and mobile-friendli
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Screenshot 
