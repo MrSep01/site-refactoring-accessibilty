@@ -1,155 +1,157 @@
 /* Global styles */
 * {
-    box-sizing: border-box; /* All elements will include padding and border in their total width and height */
-    padding: 0; /* Removes default padding from all elements */
-    margin: 0; /* Removes default margin from all elements */
+  box-sizing: border-box; /* All elements will include padding and border in their total width and height */
+  padding: 0; /* Removes default padding from all elements */
+  margin: 0; /* Removes default margin from all elements */
 }
 
 body {
-    background-color: #d9dcd6; /* Sets the background color of the entire page */
+  background-color: #d9dcd6; /* Sets the background color of the entire page */
 }
 
 /* Header styles */
 .header {
-    padding: 20px; /* Adds space around the header content */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font for the header */
-    background-color: #2a607c; /* Sets the background color of the header */
-    color: #ffffff; /* Sets the text color for the header */
+  padding: 20px; /* Adds space around the header content */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /* Sets the font for the header */
+  background-color: #2a607c; /* Sets the background color of the header */
+  color: #ffffff; /* Sets the text color for the header */
 }
 
 .header h1 {
-    display: inline-block; /* Sets the display property of the heading to inline-block */
-    font-size: 48px; /* Sets the font size of the heading */
+  display: inline-block; /* Sets the display property of the heading to inline-block */
+  font-size: 48px; /* Sets the font size of the heading */
 }
 
 .header h1 .seo {
-    color: #d9dcd6; /* Changes the color of the text 'seo' in the heading */
+  color: #d9dcd6; /* Changes the color of the text 'seo' in the heading */
 }
 
 /* Navigation styles */
 .header nav {
-    padding-top: 15px; /* Adds space at the top of the navigation */
-    margin-right: 20px; /* Adds space to the right of the navigation */
-    float: right; /* Floats the navigation to the right */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets the font for the navigation */
-    font-size: 20px; /* Sets the font size for the navigation */
+  padding-top: 15px; /* Adds space at the top of the navigation */
+  margin-right: 20px; /* Adds space to the right of the navigation */
+  float: right; /* Floats the navigation to the right */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for the navigation */
+  font-size: 20px; /* Sets the font size for the navigation */
 }
 
 .header nav ul {
-    list-style-type: none; /* Removes the bullet points from the list */
+  list-style-type: none; /* Removes the bullet points from the list */
 }
 
 .header nav ul li {
-    display: inline-block; /* Arranges the list items in a line */
-    margin-left: 25px; /* Adds space to the left of each list item */
+  display: inline-block; /* Arranges the list items in a line */
+  margin-left: 25px; /* Adds space to the left of each list item */
 }
 
 a {
-    color: #ffffff; /* Sets the color of all hyperlinks */
-    text-decoration: none; /* Removes the underline from all hyperlinks */
+  color: #ffffff; /* Sets the color of all hyperlinks */
+  text-decoration: none; /* Removes the underline from all hyperlinks */
 }
 
 /* General paragraph styles */
 p {
-    font-size: 16px; /* Sets the font size for all paragraphs */
+  font-size: 16px; /* Sets the font size for all paragraphs */
 }
 
 /* Hero image section styles */
 .hero {
-    height: 800px; /* Sets the height of the hero image section */
-    width: 100%; /* Sets the width of the hero image section */
-    margin-bottom: 25px; /* Adds space below the hero image section */
-    background-image: url("../images/digital-marketing-meeting.jpg"); /* Sets the background image for the section */
-    background-size: cover; /* Scales the background image to be as large as possible so that the background area is completely covered by the background image */
-    background-position: center; /* Positions the background image in the center of the section */
+  height: 800px; /* Sets the height of the hero image section */
+  width: 100%; /* Sets the width of the hero image section */
+  margin-bottom: 25px; /* Adds space below the hero image section */
+  /*background-image: url("../images/digital-marketing-meeting.jpg"); /* Sets the background image for the section */
+  background-size: cover; /* Scales the background image to be as large as possible so that the background area is completely covered by the background image */
+  background-position: center; /* Positions the background image in the center of the section */
 }
 
 /* Classes to float images */
 .float-left {
-    float: left; /* Floats elements to the left */
-    margin-right: 25px; /* Adds space to the right of the floated elements */
+  float: left; /* Floats elements to the left */
+  margin-right: 25px; /* Adds space to the right of the floated elements */
 }
 
 .float-right {
-    float: right; /* Floats elements to the right */
-    margin-left: 25px; /* Adds space to the left of the floated elements */
+  float: right; /* Floats elements to the right */
+  margin-left: 25px; /* Adds space to the left of the floated elements */
 }
 
 /* Main content styles */
 .content {
-    width: 75%; /* Sets the width of the content */
-    display: inline-block; /* Sets the display property of the content to inline-block */
-    margin-left: 20px; /* Adds space to the left of the content */
+  width: 75%; /* Sets the width of the content */
+  display: inline-block; /* Sets the display property of the content to inline-block */
+  margin-left: 20px; /* Adds space to the left of the content */
 }
 
 /* Side bar (Benefits section) styles */
 .benefits {
-    margin-right: 20px; /* Adds space to the right of the sidebar */
-    padding: 20px; /* Adds space around the sidebar content */
-    clear: both; /* Ensures that the sidebar will not float next to any elements above it */
-    float: right; /* Floats the sidebar to the right */
-    width: 20%; /* Sets the width of the sidebar */
-    height: 100%; /* Sets the height of the sidebar to fill the height of its container */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets the font for the sidebar */
-    background-color: #2589bd; /* Sets the background color of the sidebar */
+  margin-right: 20px; /* Adds space to the right of the sidebar */
+  padding: 20px; /* Adds space around the sidebar content */
+  clear: both; /* Ensures that the sidebar will not float next to any elements above it */
+  float: right; /* Floats the sidebar to the right */
+  width: 20%; /* Sets the width of the sidebar */
+  height: 100%; /* Sets the height of the sidebar to fill the height of its container */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for the sidebar */
+  background-color: #2589bd; /* Sets the background color of the sidebar */
 }
 
 /* Styles for each benefits section */
 .benefit-lead,
 .benefit-brand,
 .benefit-cost {
-    margin-bottom: 32px; /* Adds space below each benefits section */
-    color: #ffffff; /* Sets the text color for each benefits section */
+  margin-bottom: 32px; /* Adds space below each benefits section */
+  color: #ffffff; /* Sets the text color for each benefits section */
 }
 
 .benefit-lead h3,
 .benefit-brand h3,
 .benefit-cost h3 {
-    margin-bottom: 10px; /* Adds space below the headings in each benefits section */
-    text-align: center; /* Centers the headings in each benefits section */
+  margin-bottom: 10px; /* Adds space below the headings in each benefits section */
+  text-align: center; /* Centers the headings in each benefits section */
 }
 
 .benefit-lead img,
 .benefit-brand img,
 .benefit-cost img {
-    display: block; /* Sets the display property of the images to block */
-    margin: 10px auto; /* Centers the images horizontally */
-    max-width: 150px; /* Limits the maximum width of the images */
+  display: block; /* Sets the display property of the images to block */
+  margin: 10px auto; /* Centers the images horizontally */
+  max-width: 150px; /* Limits the maximum width of the images */
 }
 
 /* Main sections styles */
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
-    margin-bottom: 20px; /* Adds space below each main section */
-    padding: 50px; /* Adds space around each main section content */
-    height: 300px; /* Sets the height of each main section */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets the font for each main section */
-    background-color: #0072bb; /* Sets the background color for each main section */
-    color: #ffffff; /* Sets the text color for each main section */
+  margin-bottom: 20px; /* Adds space below each main section */
+  padding: 50px; /* Adds space around each main section content */
+  height: 300px; /* Sets the height of each main section */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for each main section */
+  background-color: #0072bb; /* Sets the background color for each main section */
+  color: #ffffff; /* Sets the text color for each main section */
 }
 
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {
-    max-height: 200px; /* Limits the maximum height of the images in the main sections */
+  max-height: 200px; /* Limits the maximum height of the images in the main sections */
 }
 
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2 {
-    margin-bottom: 20px; /* Adds space below the headings in the main sections */
-    font-size: 36px; /* Sets the font size for the headings in the main sections */
+  margin-bottom: 20px; /* Adds space below the headings in the main sections */
+  font-size: 36px; /* Sets the font size for the headings in the main sections */
 }
 
 /* Footer styles */
 .footer {
-    padding: 30px; /* Adds space around the footer content */
-    clear: both; /* Ensures that the footer will not float next to any elements above it */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font for the footer */
-    text-align: center; /* Centers the footer content */
+  padding: 30px; /* Adds space around the footer content */
+  clear: both; /* Ensures that the footer will not float next to any elements above it */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /* Sets the font for the footer */
+  text-align: center; /* Centers the footer content */
 }
 
 .footer h2 {
-    font-size: 20px; /* Sets the font size for the footer heading */
+  font-size: 20px; /* Sets the font size for the footer heading */
 }
