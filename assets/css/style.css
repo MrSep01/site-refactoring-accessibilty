@@ -60,7 +60,7 @@ p {
   height: 800px; /* Sets the height of the hero image section */
   width: 100%; /* Sets the width of the hero image section */
   margin-bottom: 25px; /* Adds space below the hero image section */
-  /*background-image: url("../images/digital-marketing-meeting.jpg"); /* Sets the background image for the section */
+  /* background-image: url("../images/digital-marketing-meeting.jpg"); /* Sets the background image for the section */
   background-size: cover; /* Scales the background image to be as large as possible so that the background area is completely covered by the background image */
   background-position: center; /* Positions the background image in the center of the section */
 }
