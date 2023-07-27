@@ -14,7 +14,9 @@ This project involved updating an existing website to enhance its accessibility 
 
 📑 Updated the title of the webpage to make it more descriptive and relevant to the site's content.
 
-🔗 Fixed the linked issue by adding id and class for the search-engine-optimizatuon selector.
+🔗 Fixed the linked issue in heading by adding id and class for the search-engine-optimizatuon selector.
+
+🔗 Fixed the heading Hiararchy by changing Footer .h2 to Footer .h4
 
 ### CSS:
 
@@ -24,7 +26,7 @@ This project involved updating an existing website to enhance its accessibility 
 
 **CSS Variables:** Introduced CSS variables to the codebase, allowing for consistent styling and easy changes in the future. These variables, defined in the :root selector, include color schemes and font families used throughout the website.
 
-**CSS Selectors:** Utilized various types of CSS selectors for efficient styling. This includes element selectors (e.g., body, p, h1), class selectors (e.g., .header, .footer), the universal selector (*), and pseudo-class selectors (e.g., :root).
+**CSS Selectors:** Utilized various types of CSS selectors for efficient styling. This includes element selectors (e.g., body, p, h1), class selectors (e.g., .header, .footer), the universal selector (\*), and pseudo-class selectors (e.g., :root).
 
 **Box Model:** Set the box-sizing property to border-box for all elements. This includes the padding and border in an element's total width and height, leading to a more predictable layout.
 
@@ -45,16 +47,16 @@ By continuing to focus on accessibility and maintainability, the website's usabi
 
 The updates made to this website are in accordance with the Web Content Accessibility Guidelines (WCAG) as set out by the World Wide Web Consortium (W3C).
 
-### License 📃
-
-This project is licensed under the terms of the MIT license.
-
 ### Repository and GitHub Pages 📌
 
-You can access the code for this project in the [repository on GitHub.](https://github.com/MrSep01/site-refactoring-accessibilty) 
+You can access the code for this project in the [repository on GitHub.](https://github.com/MrSep01/site-refactoring-accessibilty)
 
 The website is hosted using GitHub Pages and can be accessed [here.](https://mrsep01.github.io/site-refactoring-accessibilty/)
 
 ### Screenshot 🖼️
 
 ![Alt text](assets/images/fite_Refactoring_Horiseon.png)
+
+### License 📃
+
+This project is licensed under the terms of the MIT license.

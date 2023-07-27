@@ -1,157 +1,235 @@
-/* Global styles */
+/*
+The :root selector is used to define CSS variables that can be used globally across the HTML document. 
+Here we define variables for various colors and font families that we use frequently in our CSS.
+This makes it easy to change these values in one place.
+*/
+:root {
+  --main-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  --header-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --background-blue: #0072bb;
+  --background-navy: #2a607c;
+  --background-light-navy: #2589bd;
+  --background-grey: #d9dcd6;
+  --color-white: #ffffff;
+  --color-light-grey: #d9dcd6;
+}
+
+/*
+The * selector applies styles to all HTML elements. 
+Here, we use it to set the box-sizing property to border-box, which includes padding and border in an element's total width and height. 
+We also remove default padding and margin from all elements.
+*/
 * {
-  box-sizing: border-box; /* All elements will include padding and border in their total width and height */
-  padding: 0; /* Removes default padding from all elements */
-  margin: 0; /* Removes default margin from all elements */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+/*
+This block styles the <body> element. We use a variable for the background color.
+*/
 body {
-  background-color: #d9dcd6; /* Sets the background color of the entire page */
+  background-color: var(--background-grey);
 }
 
-/* Header styles */
+/*
+updares to header selector. We use variables for padding, font-family, background color, and text color.
+*/
 .header {
-  padding: 20px; /* Adds space around the header content */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif; /* Sets the font for the header */
-  background-color: #2a607c; /* Sets the background color of the header */
-  color: #ffffff; /* Sets the text color for the header */
+  padding: 20px;
+  font-family: var(--header-font-family);
+  background-color: var(--background-navy);
+  color: var(--color-white);
 }
 
+/*
+This block styles the header h1 element.
+*/
 .header h1 {
-  display: inline-block; /* Sets the display property of the heading to inline-block */
-  font-size: 48px; /* Sets the font size of the heading */
+  display: inline-block;
+  font-size: 48px;
 }
 
+/*
+This block styles the 'seo' class inside the header. We use a variable for the color.
+*/
 .header h1 .seo {
-  color: #d9dcd6; /* Changes the color of the text 'seo' in the heading */
+  color: var(--color-light-grey);
 }
 
-/* Navigation styles */
+/*
+This block styles the navigation element in the header. We use variables for padding, margin, font-family, and font size.
+*/
 .header nav {
-  padding-top: 15px; /* Adds space at the top of the navigation */
-  margin-right: 20px; /* Adds space to the right of the navigation */
-  float: right; /* Floats the navigation to the right */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for the navigation */
-  font-size: 20px; /* Sets the font size for the navigation */
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: var(--main-font-family);
+  font-size: 20px;
 }
 
+/*
+This block removes the default list style from the ul element in the navigation.
+*/
 .header nav ul {
-  list-style-type: none; /* Removes the bullet points from the list */
+  list-style-type: none;
 }
 
+/*
+This block styles the li elements in the navigation. They are displayed inline and have a left margin.
+*/
 .header nav ul li {
-  display: inline-block; /* Arranges the list items in a line */
-  margin-left: 25px; /* Adds space to the left of each list item */
+  display: inline-block;
+  margin-left: 25px;
 }
 
+/*
+This block styles all elements (links). We remove the default underline and use a variable for the color.
+*/
 a {
-  color: #ffffff; /* Sets the color of all hyperlinks */
-  text-decoration: none; /* Removes the underline from all hyperlinks */
+  color: var(--color-white);
+  text-decoration: none;
 }
 
-/* General paragraph styles */
+/*
+This block styles all p (paragraph) elements.
+*/
 p {
-  font-size: 16px; /* Sets the font size for all paragraphs */
+  font-size: 16px;
 }
 
-/* Hero image section styles */
+/*
+This block styles the hero section. The background image is set to cover the entire section and is positioned in the center. 
+The section has a defined height and width and a bottom margin.
+*/
 .hero {
-  height: 800px; /* Sets the height of the hero image section */
-  width: 100%; /* Sets the width of the hero image section */
-  margin-bottom: 25px; /* Adds space below the hero image section */
-  /* background-image: url("../images/digital-marketing-meeting.jpg"); /* Sets the background image for the section */
-  background-size: cover; /* Scales the background image to be as large as possible so that the background area is completely covered by the background image */
-  background-position: center; /* Positions the background image in the center of the section */
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-/* Classes to float images */
+/*
+This block styles elements with the class 'float-left'. They are floated to the left with a right margin.
+*/
 .float-left {
-  float: left; /* Floats elements to the left */
-  margin-right: 25px; /* Adds space to the right of the floated elements */
+  float: left;
+  margin-right: 25px;
 }
 
+/*
+This block styles elements with the class 'float-right'. They are floated to the right with a left margin.
+*/
 .float-right {
-  float: right; /* Floats elements to the right */
-  margin-left: 25px; /* Adds space to the left of the floated elements */
+  float: right;
+  margin-left: 25px;
 }
 
-/* Main content styles */
+/*
+This block styles the content section. It has a defined width and a left margin.
+*/
 .content {
-  width: 75%; /* Sets the width of the content */
-  display: inline-block; /* Sets the display property of the content to inline-block */
-  margin-left: 20px; /* Adds space to the left of the content */
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/* Side bar (Benefits section) styles */
+/*
+This block styles the benefits section. It is floated to the right and has defined width and height. 
+We use variables for margin, padding, font-family, and background color.
+*/
 .benefits {
-  margin-right: 20px; /* Adds space to the right of the sidebar */
-  padding: 20px; /* Adds space around the sidebar content */
-  clear: both; /* Ensures that the sidebar will not float next to any elements above it */
-  float: right; /* Floats the sidebar to the right */
-  width: 20%; /* Sets the width of the sidebar */
-  height: 100%; /* Sets the height of the sidebar to fill the height of its container */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for the sidebar */
-  background-color: #2589bd; /* Sets the background color of the sidebar */
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: var(--main-font-family);
+  background-color: var(--background-light-navy);
 }
 
-/* Styles for each benefits section */
+/*
+This block styles the benefits sections. They have a bottom margin and text color. We use a variable for the color.
+*/
 .benefit-lead,
 .benefit-brand,
 .benefit-cost {
-  margin-bottom: 32px; /* Adds space below each benefits section */
-  color: #ffffff; /* Sets the text color for each benefits section */
+  margin-bottom: 32px;
+  color: var(--color-white);
 }
 
+/*
+This block styles the h3 elements in the benefits sections. They are centered and have a bottom margin.
+*/
 .benefit-lead h3,
 .benefit-brand h3,
 .benefit-cost h3 {
-  margin-bottom: 10px; /* Adds space below the headings in each benefits section */
-  text-align: center; /* Centers the headings in each benefits section */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
+/*
+This block styles the img elements in the benefits sections. They are displayed as block elements, centered horizontally, and have a max-width.
+*/
 .benefit-lead img,
 .benefit-brand img,
 .benefit-cost img {
-  display: block; /* Sets the display property of the images to block */
-  margin: 10px auto; /* Centers the images horizontally */
-  max-width: 150px; /* Limits the maximum width of the images */
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
-/* Main sections styles */
+/*
+This block styles the main sections. We use variables for margin, padding, height, font-family, background color, and text color.
+*/
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
-  margin-bottom: 20px; /* Adds space below each main section */
-  padding: 50px; /* Adds space around each main section content */
-  height: 300px; /* Sets the height of each main section */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Sets the font for each main section */
-  background-color: #0072bb; /* Sets the background color for each main section */
-  color: #ffffff; /* Sets the text color for each main section */
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: var(--main-font-family);
+  background-color: var(--background-blue);
+  color: var(--color-white);
 }
 
+/*
+This block styles the img elements in the main sections. They have a max-height.
+*/
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {
-  max-height: 200px; /* Limits the maximum height of the images in the main sections */
+  max-height: 200px;
 }
 
+/*
+This block styles the h2 elements in the main sections. They have a bottom margin and a font size.
+*/
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2 {
-  margin-bottom: 20px; /* Adds space below the headings in the main sections */
-  font-size: 36px; /* Sets the font size for the headings in the main sections */
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
-/* Footer styles */
+/*
+This selector styles the footer. It has padding, font-family, and text alignment. We use a variable for the font-family.
+*/
 .footer {
-  padding: 30px; /* Adds space around the footer content */
-  clear: both; /* Ensures that the footer will not float next to any elements above it */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif; /* Sets the font for the footer */
-  text-align: center; /* Centers the footer content */
+  padding: 30px;
+  clear: both;
+  font-family: var(--header-font-family);
+  text-align: center;
 }
 
-.footer h2 {
-  font-size: 20px; /* Sets the font size for the footer heading */
+/*
+This block styles the h4 element in the footer.
+*/
+.footer h4 {
+  font-size: 20px;
 }
